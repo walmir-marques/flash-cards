@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 0px;
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  background-color: aqua;
+  font-family: "Monoton";
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  word-spacing: 30px;
+  letter-spacing: -5px;
+  padding: 2.4rem 0;
+  margin: 0;
+}
+
+.flashcards {
+  background-image: url("https://jornalismorio.espm.br/wp-content/uploads/2021/12/confira-agora-os-25-melhores-animes-que-ja-foram-criados-1.jpg"); /* Replace 'your-image-url.jpg' with the URL or path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.flashcards div {
+  border: 1px solid #e7e7e7;
+  background-color: #f7f7f7;
+  border-radius: 7px;
+  aspect-ratio: 2 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  opacity: 70%;
+  margin-top: 10px;
+}
+
+div.selected {
+  border: 1px solid aqua;
+  background-color: aqua;
+  color: blue;
+  font-weight: bold;
+}
